@@ -1,0 +1,114 @@
+/*
+Fatima Mohammed
+Fall 2022 
+CIS1420
+Project 4
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+body {
+  margin: auto;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  background-image: url("https://images.pexels.com/photos/2034892/pexels-photo-2034892.jpeg");
+  background-size: 150%;
+  color: white;
+  background-repeat: repeat-x;
+  background-position: 0px 0px;
+  animation: animatedBackground 13s linear infinite alternate;
+}
+
+#index-body {
+    text-align: justify;
+    width:700px;
+    padding-left: 20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    width: 700px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    width: 700px;
+    padding-top: 30px;
+    padding-bottom:10px;
+    font-family: 'Alegreya', serif;
+    font-size: 55px;
+}
+    
+nav {
+  overflow: hidden;
+  width: 700px;
+  text-align: center;
+}
+
+nav a {
+  color: lightsteelblue;
+  font-size: 20px;
+  padding: 50px 10px;
+  text-align: center;
+  
+}
+
+nav a:hover {
+  background-color: pink;
+  color: black;
+}
+
+nav a:active {
+  background-color: lightblue;
+  color: black;
+}
+
+th {
+    text-align: justify;
+}
+
+td {
+    width: 700px;
+    
+}
+
+table {
+    width: 700px;
+}
+
+img {
+    padding-left: 20px;
+    opacity: 0.5;
+    filter: drop-shadow(8px 8px 10px gray);
+    filter: brightness(150%);
+}
+
+#earlylifevid1 {
+    padding-left: 20px;
+    float: left;
+    margin: 0 10px 5px 0px
+}
+
+#homepic {
+    padding-left: 20px;
+    float: left;
+    margin: 0 10px 5px 0px;
+}
+
+
