@@ -1,0 +1,8 @@
+ReadMe - Android SDK Kotlin Weather App
+
+This is my project for an Android Weather App for Android.
+It is really simple and is meant to satisfy requirements for a project.
+I am loading it on github if it might help someone understand their assignment better.
+
+You need to generate your own API key for the API url OpenWeatherMap.
+
