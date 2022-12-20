@@ -1,0 +1,6 @@
+Errors for Project 3
+
+I had a persistent issue with my gradle files. I updated the gradle per Android SDK's suggesting and it broke my project. I wasted a lot of time trying to fix my configuration settings and roll back the upgrade. I had to pull the project files, manifest, and create a new project with fresh gradle settings.
+
+I also noticed my project wasn't working on the Pixel 4 but it was working fine on my S22 when I tested in the emulator. I checked my API version and made sure it was 28 instead of 33.
+

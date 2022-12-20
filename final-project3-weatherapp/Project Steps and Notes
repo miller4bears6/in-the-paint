@@ -1,0 +1,44 @@
+Fatima Mohammed
+FA 2022
+CIS2818
+Project 3
+
+Notes for this project
+
+• To create a user interface using Jetpack standards
+• To utilize a Web Service as the source of data, and use API calls
+• To develop a simple, but useful, Weather app
+
+Basic Process Steps
+
+- call the OpenWeatherMap.org API and display the result to my phone
+- set up the project and display
+- set up a splash screen
+- make the API call
+- format the JSON response from the API for our app
+
+Set up the weather API
+
+- sign up for account on openweathermap.org
+- generate API key --> d782c3641dcc9cbcb8528dfb0245b3e4
+- api key needed for project: 
+- set up imperial units
+- test the call in Postman
+-
+
+Set up the project and display
+
+- open android studio and create a new project - empty activity
+
+- set up permission in the android manifest file: internet, fine location, coarse location
+
+- determine what kind of Jetpack component to include in the code...I went with ViewModel
+
+- migrate the Kotlin code from 1.5 to 1.8
+
+- not sure why the gradle build took a bit to run 
+
+
+
+
+

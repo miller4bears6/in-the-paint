@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_detailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Weather"
+            android:textSize="24sp"
+            android:textColor="@color/quantum_lime"
+            android:fontFamily="sans-serif-condensed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <LinearLayout
+            android:id="@+id/ll_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start"
+            tools:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/tv_detailsButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Precipitation"
+                android:textSize="12sp"
+                android:textColor="@color/translucent"
+                android:fontFamily="sans-serif-condensed" />
+            <TextView
+                android:id="@+id/tv_Precipitation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="0.0 mm"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="sans-serif-condensed" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Humidity"
+                android:textSize="12sp"
+                android:textColor="@color/translucent"
+                android:fontFamily="sans-serif-condensed" />
+            <TextView
+                android:id="@+id/tv_Humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="56 %"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Visibility"
+                android:textSize="12sp"
+                android:textColor="@color/translucent"
+                android:fontFamily="sans-serif-condensed" />
+            <TextView
+                android:id="@+id/tv_Visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="11 mi"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Clouds"
+                android:textSize="12sp"
+                android:textColor="@color/translucent"
+                android:fontFamily="sans-serif-condensed" />
+            <TextView
+                android:id="@+id/tv_cloudiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Lowest"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="sans-serif-condensed" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_forecastButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Forecast"
+            android:textSize="24sp"
+            android:textColor="@color/quantum_lime"
+            android:fontFamily="sans-serif-condensed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <LinearLayout
+            android:id="@+id/ll_forecast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/tv_forecastButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Daily Forecast"
+                android:textSize="18sp"
+                android:textColor="@color/translucent"
+                android:fontFamily="sans-serif-condensed" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_dailyForecast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                tools:itemCount="5"
+                tools:listitem="@layout/daily_forecast_list_item"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
