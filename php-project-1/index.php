@@ -10,27 +10,7 @@ https://github.com/Oakland-Community-College/cis2454-summer2023-project1-miller4
 <?php
 
     //connect to db with an external php file
-    require_once 'scripts/database.php';
-    
-    //CRUD OPERATIONS
-    //read-select
-
-    //declare variables here
-    
-    //calculations
-    //this is in the php below
-        
-    //format the vars
-    
-    //more validation
-    
-    //RUN A QUERY HERE - SELECT
-
-    //next set up a loop in the body of the html to display data
-
-
-    
-    
+    require_once 'scripts/database.php';   
 ?>
 
 <!DOCTYPE html>
