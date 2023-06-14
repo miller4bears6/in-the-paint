@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!--
+//Fatima Mohammed
+//CIS 1440
+//Project 3
+//Winter 2023
+-->
+
+<html lang="en">   
+    
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatima's Project 3 - !</title>
+  <link rel="stylesheet" href="scripts/style.css">
+  <link rel="shortcut icon" href="#"> 
+</head>
+
+<body>
+    
+    <br>
+    <h1>Welcome to Fatima's Project 3!</h1><br>
+  
+    <br><br><br><br>
+    <p class="title">Welcome to my Cat Trivia Page!<br><br>Click the button below to learn a new Cat Fact!</p>
+
+    <p class="facts"></p>
+
+    <br><br>
+    
+    <div class="btn">
+      <button onclick="buttonClick()">Get a Cat Fact!</button>
+    </div>
+    
+    <br><br>
+    
+    <div class="progress">Keep track of your facts here!</div>
+    
+    <br><br>
+    
+    <div id ="form2"><h3>Ready to sign up for the next Cat Trivia Game Event?</h3><br><br>
+        <form action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="email">eMail:</label>
+            <input type="text" id="email" name="email" required><br><br>
+            
+            <button onclick="buttonTrivia()">Sign Up!</button>
+        </form>
+
+        <br><br>
+    </div>
+        
+    <script src="scripts/script.js"></script>
+</body>
+</html>
