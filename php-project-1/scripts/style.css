@@ -1,3 +1,9 @@
+/* 
+    Created on : Jun 12, 2023, 11:37:16 PM
+    Author     : fatimamohammed
+    ----my original file got deleted from Netbeans for some reason
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 *{
@@ -55,7 +61,7 @@ table,td,th{
   border: 1px;
 }
 
-#btn_add_stock{
+#btn_add{
   width: 175px;
   height: 40px;
   font-size: 20px;
@@ -66,13 +72,13 @@ table,td,th{
   border-radius: 10px;
 }
 
-#btn_add_stock:active {
+#btn_add:active {
   background-color: salmon;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-#btn_upd_stock{
+#btn_upd{
   width: 200px;
   height: 40px;
   font-size: 20px;
@@ -83,13 +89,13 @@ table,td,th{
   border-radius: 10px;
 }
 
-#btn_upd_stock:active {
+#btn_upd:active {
   background-color: salmon;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-#btn_del_stock{
+#btn_del{
   width: 200px;
   height: 40px;
   font-size: 20px;
@@ -100,8 +106,9 @@ table,td,th{
   border-radius: 10px;
 
 }
-#btn_del_stock:active {
+#btn_del:active {
   background-color: salmon;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
